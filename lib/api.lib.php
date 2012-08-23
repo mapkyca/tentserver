@@ -12,6 +12,7 @@
 	 	
 	 		static $request = '';		// Current request
 	 		static $params = array();	// Current request parameters
+	 		static $data = '';			// Request data
 	 									// The list of all request handlers
 	 		static $requestHandlers = array('public' => array(), 'authenticated' => array());
 	 	
@@ -22,6 +23,7 @@
 	 			// TODO: authentication	 		
 		 		self::$request = $_GET['func'];
 		 		self::$params = explode('/',$_GET['params']);
+		 		self::$data = @file_get_contents('php://input');
 	 		}
 	 	
 	 		/**
