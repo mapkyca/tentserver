@@ -9,3 +9,5 @@
 	 
 	// Load main library
 		require_once(dirname(__FILE__) . '/lib/start.php');
+		
+		TentAPI::controller();

@@ -7,7 +7,15 @@
 	 * @subpackage Core
 	 */
 	 	
-
+	 	
+	// API PARSING
+	
+	// Load API parsing functions
+		require_once(dirname(__FILE__) . '/api.lib.php');
+	 	
+	// Load server profile functions
+		require_once(dirname(__FILE__) . '/profile.lib.php');
+	 	
 	// TEMPLATES
 		
 	// Load Bonita templating engine
