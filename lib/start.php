@@ -15,6 +15,9 @@
 	 	
 	// Load server profile functions
 		require_once(dirname(__FILE__) . '/profile.lib.php');
+
+	// Load app functions
+		require_once(dirname(__FILE__) . '/apps.lib.php');
 	 	
 	// TEMPLATES
 		
