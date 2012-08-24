@@ -17,6 +17,12 @@
           $settings_file = "{$_SERVER['SERVER_NAME']}.php";
           if (file_exists(dirname(dirname(__FILE__)) . "/configuration/" . $settings_file))
                 require_once(dirname(dirname(__FILE__)) . "/configuration/" . $settings_file);
+        
+        // Load error handlers
+                require_once(dirname(__FILE__) . '/errors.lib.php');
+          
+        // Load database handlers
+                require_once(dirname(__FILE__) . '/database.lib.php');
 	
 	// Load API parsing functions
 		require_once(dirname(__FILE__) . '/api.lib.php');
