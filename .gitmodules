@@ -1,3 +1,7 @@
 [submodule "lib/bonita"]
 	path = lib/bonita
 	url = git://github.com/benwerd/bonita.git
+
+[submodule "test/framework"]
+	path = test/framework
+	url = git://github.com/mapkyca/SimpleTestFramework.git
