@@ -9,6 +9,14 @@
 	 	
 	 	
 	// API PARSING
+
+          require_once(dirname(__FILE__) . "/version.info.php");
+          require_once(dirname(dirname(__FILE__)) . "/configuration/global.php");
+      
+        // Include any domain specific configuration
+          $settings_file = "{$_SERVER['SERVER_NAME']}.php";
+          if (file_exists(dirname(dirname(__FILE__)) . "/configuration/" . $settings_file))
+                require_once(dirname(dirname(__FILE__)) . "/configuration/" . $settings_file);
 	
 	// Load API parsing functions
 		require_once(dirname(__FILE__) . '/api.lib.php');
