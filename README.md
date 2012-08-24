@@ -5,17 +5,17 @@ A project to create a simple PHP server for tent.io.
 
 By:
 
-Ben Werdmuller: <http://benwerd.com/>
-Marcus Povey: <http://www.marcus-povey.co.uk>
+* Ben Werdmuller: <http://benwerd.com/>
+* Marcus Povey: <http://www.marcus-povey.co.uk>
 
 Installation
-============
+------------
 
 1) Copy files onto your webserver
 
-2) Create a configuration file for your domain in /configuration/
+2) Create a configuration file for your domain in /configuration/ e.g.
 
-    e.g. /configuration/tentserver.mydomain.com.php
+    /configuration/tentserver.mydomain.com.php
 
 
 3) Create a database, and install a schema from /lib/schema
