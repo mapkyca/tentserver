@@ -16,3 +16,15 @@
     if (!$config) $config = new stdClass();
     ///////////////////
     
+    
+    
+    
+    /**
+     * Database settings.
+     */
+    /*
+     * $CONFIG->mysql_db_user = 'My User';
+     * $CONFIG->mysql_db_password = 'Some password'; 
+     * $CONFIG->mysql_db_database = 'alg_quarterly';
+     * $CONFIG->mysql_db_host = 'localhost';
+     */

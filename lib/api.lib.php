@@ -10,12 +10,33 @@
 	 
 	 	class TentAPI {
 	 	
+                        public static $config; // Configuration
+                        public static $database; // Database handler
+                    
 	 		static $request = '';		// Current request
 	 		static $params = array();	// Current request parameters
 	 		static $data = '';			// Request data
 	 									// The list of all request handlers
 	 		static $requestHandlers = array('public' => array(), 'authenticated' => array());
 	 	
+                        /**
+                         * Initialise server with a config
+                         * @param type $config 
+                         */
+                        public static function init(stdClass $configuration = null) {
+                            global $config;
+                            if (!$configuration) $configuration = $config;
+                            
+                            // Init configuration
+                            self::$config = $configuration;
+                            
+                            // Init error handling
+                            Errors::init();
+                            
+                            // Init database
+                            self::$database = new MySQLDatabase(self::$config->mysql_db_user, self::$config->mysql_db_password, self::$config->mysql_db_database, self::$config->mysql_db_host);                            
+                        }
+                        
 	 		/**
 	 		 * Parse request variables from the input line
 	 		 */
