@@ -1,3 +1,3 @@
 [submodule "lib/bonita"]
 	path = lib/bonita
-	url = git@github.com:benwerd/bonita.git
+	url = git://github.com/benwerd/bonita.git
