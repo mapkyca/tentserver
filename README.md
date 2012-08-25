@@ -17,10 +17,12 @@ Installation
 
     /configuration/tentserver.mydomain.com.php
 
+3) Rename htaccess_dist to .htaccess, optionally set RewriteBase according to 
+your setup.
 
-3) Create a database, and install a schema from /lib/schema
+4) Create a database, and install a schema from /lib/schema
 
-4) Add your database settings in your newly created configuration file, e.g.
+5) Add your database settings in your newly created configuration file, e.g.
 
     $CONFIG->mysql_db_user = 'db_user';
     $CONFIG->mysql_db_password = 'Some password'; 
